@@ -50,8 +50,7 @@ function checkGameWinner(board){
     return ((board[0]===board[4] && board[4]===board[8]) ||(board[0]===board[1] && board[1]===board[2]) ||(board[0]===board[3] && board[3]===board[6]) ||(board[8]===board[5] && board[5]===board[2]) ||(board[8]===board[7] && board[7]===board[6]) ||(board[2]===board[4] && board[4]===board[6]) ||(board[1]===board[4] && board[4]===board[7]) ||(board[3]===board[4] && board[4]===board[5]))
 }
 var tic_tac_toe = {
-    player1 : "x",
-    player2 : "o",
+    player : "x",
     gameBoard : ["0","1","2","3","4","5","6","7","8"],
     gameOver : false,
     lastPlayed : "",
@@ -72,7 +71,9 @@ var tic_tac_toe = {
             if (checkGameWinner(this.gameBoard)){
                 alert("GameOver"`${this.lastPlayed}`,"is the winner")
             }
+            if(i == 8){
+                alert("GameOver","No winner")
+            }
         }
     }
-    
 }
