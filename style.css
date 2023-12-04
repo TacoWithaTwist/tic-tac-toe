@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #08415C;
+}
+
+.game-container{
+    display: grid;
+    grid-template-columns: 12em 12em 12em;
+    grid-template-rows: 12em 12em 12em;
+    background-color: #CC2936;
+    position: absolute;
+    overflow: hidden;
+}
+.tiles{
+    border: solid 2px #FFCA3A;
+}
+.tiles:hover{
+    background-color: #DE3F4D;
+}
